@@ -1,0 +1,20 @@
+# install
+install:
+    actions:
+        - cd server && yarn
+        - cd app && yarn
+
+# ports
+clear ports: kill -9 $(lsof -i:1115 -t) 2> /dev/null
+
+# debug
+debug app: cd app && yarn start
+debug server: cd server && yarn dev
+debug all:
+    actions:
+        - clear ports
+        - yarn start
+
+# access subfolders
+app: cd app &&
+server: cd server &&

@@ -1,0 +1,76 @@
+.ripple-parent {
+	position: relative;
+	overflow: hidden;
+}
+
+.card {
+	padding: 1em 1em;
+	border-radius: 15px;
+	background-color: var(--ion-card-background);
+	text-align: left;
+	box-sizing: border-box;
+	box-shadow: var(--shadow);
+	width: 100%;
+	&.ripple-parent {
+		cursor: pointer;
+	}
+}
+
+$blue: linear-gradient(90deg, rgb(43, 68, 179) 0%, rgb(39, 109, 201) 100%);
+$red: linear-gradient(90deg, rgb(241, 165, 65) 0%, rgb(241, 209, 63) 100%);
+$cyan: linear-gradient(90deg, rgb(26, 160, 165) 0%, rgb(28, 150, 180) 100%);
+
+.gradient-blue {
+	background: $blue;
+}
+
+.gradient-red {
+	background: $red;
+}
+
+.gradient-cyan {
+	background: $cyan;
+}
+
+.gradient-white {
+}
+
+button.danger {
+	background: none;
+	text-align: left;
+	font-size: 1em;
+	margin-top: 1em;
+	color: var(--ion-color-primary);
+}
+
+button.outline {
+	border: 1px solid var(--ion-color-primary);
+	padding: 0.4em 0.8em;
+	border-radius: 10px;
+}
+
+.back-button {
+	font-size: 24px;
+	cursor: pointer;
+	margin: 1em;
+}
+
+ion-input.input {
+	background-color: var(--ion-background-color) !important;
+	border-radius: 10px;
+	padding: 0.4em !important;
+	margin-top: 0.5em;
+	height: fit-content;
+	font-family: "DM Sans";
+}
+
+.input-outside {
+	@extend ion-input.input;
+	background-color: white !important;
+	height: auto;
+}
+
+.outline {
+	border-bottom: solid 1px var(--ion-color-primary);
+	border-radius: 0 !important;
+}

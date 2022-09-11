@@ -1,0 +1,64 @@
+@mixin mobile {
+	@media screen and (max-width: 600px) {
+		@content;
+	}
+}
+
+.parent {
+	padding: 0 !important;
+}
+
+.immediate {
+	border-radius: 10px;
+	box-shadow: var(--shadow);
+	min-height: 7em;
+
+	padding: 1em;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	@include mobile {
+		flex-direction: column;
+		justify-content: end;
+		align-items: flex-start;
+	}
+
+	h3 {
+		color: white;
+		font-weight: 800;
+		letter-spacing: -1px;
+	}
+
+	p {
+		color: white;
+	}
+
+	.main-content {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.cta {
+		text-transform: capitalize;
+		font-size: 80%;
+		font-weight: 600;
+		text-align: right;
+		@include mobile {
+			text-align: left;
+		}
+	}
+}
+
+.immediate.gradient-red,
+.immediate.gradient-white {
+	* {
+		color: black;
+	}
+}
+
+.immediate.gradient-white {
+	min-height: fit-content;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "main": "src/server.js",
+  "author": "Ranjith RD",
+  "scripts": {
+    "run": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.0"
+  }
+}

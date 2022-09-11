@@ -1,0 +1,32 @@
+#main {
+	#wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 5em 2em;
+
+		height: 100vh;
+
+		#header,
+		#footer {
+			width: 100%;
+			* {
+				text-align: center;
+			}
+		}
+	}
+
+	main {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		gap: 0.2em;
+		padding: 1em 2em;
+	}
+
+	// ion-toolbar#backOnly {
+	//     background-color: white !important;
+	//     background: none !important;
+	// }
+}

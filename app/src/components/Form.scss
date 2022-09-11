@@ -1,0 +1,40 @@
+.form {
+	ion-input,
+	ion-datetime {
+		background-color: var(--ion-background-color) !important;
+		border-radius: 10px;
+		padding: 0.4em !important;
+		margin-top: 0.5em;
+	}
+	ion-datetime {
+		padding: 1em !important;
+	}
+
+	p.label {
+		@extend .small !optional;
+		margin-left: 1em;
+	}
+
+	.header {
+		margin-top: 0.6em;
+		margin-left: 0.8em;
+	}
+
+	p.error {
+		color: var(--ion-color-danger);
+	}
+
+	button.picker-button {
+		width: 100%;
+		background-color: white;
+		text-align: left;
+		font-size: 1em;
+		font-weight: bold;
+		padding-left: 1em;
+	}
+
+	p.tap-change {
+		font-size: 0.6em;
+		margin-top: 0.4em;
+	}
+}

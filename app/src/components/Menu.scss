@@ -1,0 +1,45 @@
+#menu {
+	// ion-menu {
+	// 	#menu-items {
+	// 		text-align: left;
+	// 		padding: 1em !important;
+	// 		padding-left: 1em;
+	// 		background-color: black;
+	// 	}
+
+	// 	ion-item.selected {
+	// 		--background: rgba(var(--ion-color-primary-rgb), 0.14);
+	// 		ion-icon {
+	// 			color: var(--ion-color-primary);
+	// 		}
+	// 	}
+	// }
+
+	#title {
+		margin-top: 4em;
+		margin-left: 1em;
+		font-size: 1.25em;
+	}
+
+	// ion-item.selected {
+	// 	background-color: var(--ion-color-primary);
+	// }
+
+	// ion-item {
+	// 	margin-left: 0.3em;
+	// }
+
+	.menu-item {
+		display: block;
+		padding: 0.8em 1.3em;
+	}
+
+	.selected {
+		background-color: rgba(var(--ion-color-primary-rgb), 0.14);
+		color: var(--ion-color-primary);
+	}
+
+	.grayed {
+		color: rgb(85, 85, 85);
+	}
+}

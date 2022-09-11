@@ -1,0 +1,95 @@
+.grid-defaults {
+	display: grid;
+	gap: 0.75em;
+}
+
+.responsive {
+	@extend .grid-defaults;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.responsive-wide {
+	@extend .grid-defaults;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	@media screen and (max-width: 400px) {
+		grid-template-columns: 1fr;
+	}
+	.card {
+		width: 100%;
+	}
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	align-items: center;
+}
+
+.space-between {
+	@extend .row;
+	justify-content: space-between;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4em;
+	align-items: flex-start;
+	&.nogap {
+		gap: 0;
+	}
+}
+
+.spacer {
+	height: 1em;
+}
+
+.half-spacer {
+	height: 0.25em;
+}
+
+.margins {
+	margin: 1em;
+}
+
+.inline-size {
+	flex: none;
+	width: 100px !important;
+	height: 2.5em;
+}
+
+.indent-left {
+	margin-left: 1em;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.full-height {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center !important;
+}
+
+.nomargin {
+	margin: 0 !important;
+}
+
+.small-margins {
+	margin: 0.2em !important;
+}
+
+.padding-small {
+	padding: 0.2em !important;
+}
+
+.column-align {
+	@extend .column;
+	align-items: stretch;
+	* {
+		text-align: center !important;
+	}
+}

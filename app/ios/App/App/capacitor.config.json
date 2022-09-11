@@ -1,0 +1,6 @@
+{
+	"appId": "com.steward.steward",
+	"appName": "Steward",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

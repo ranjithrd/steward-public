@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "906166394282",
+    "firebase_url": "https://steward-1.firebaseio.com",
+    "project_id": "steward-1",
+    "storage_bucket": "steward-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906166394282:android:b0437e47f56d4edb6f9fd3",
+        "android_client_info": {
+          "package_name": "com.steward.steward"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906166394282-qphhocvrrqba11qeuh5e2jf1grfl71eu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi--owKJadaS9gsxthyRvnCOOeX2t9NUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906166394282-qphhocvrrqba11qeuh5e2jf1grfl71eu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "906166394282-cjnr6d981oph64e8kj35g0sf5jclargo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.steward.steward"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
